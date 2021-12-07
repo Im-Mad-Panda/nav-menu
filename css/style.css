@@ -1,0 +1,99 @@
+/*=====================COMMON STYLES START======================*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", "Inter Regular", "Inter Bold", "Mulish", "Mulish Bold", "Mulish Regular", "Playfair Display", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #fff;
+  color: #000000;
+}
+.container {
+  max-width: 1130px;
+  width: 100%;
+  margin: 0 auto;
+}
+.button {
+  border-radius: 8px;
+  border: 1px solid #fb8f1d;
+}
+.logo-hover:hover {
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+/*=====================COMMON STYLES END======================*/
+.header {
+  padding: 20px 0;
+  background-color: #212529;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: sans-serif;
+  position: relative;
+}
+.navbar,
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list > li:nth-child(n + 2) {
+  margin-left: 20px;
+}
+.nav-list a {
+  padding: 10px 10px;
+}
+.nav-list a:hover,
+.nav-list li:focus-within > a {
+  background-color: rgb(0, 17, 255);
+  color: rgb(255, 255, 255);
+}
+.nav-list li {
+  position: relative;
+}
+.nav-list li:hover > .dropmenu-wrap,
+.nav-list li:focus-within > .dropmenu-wrap {
+  visibility: visible;
+}
+.list-item:hover{
+  background-color: rgb(0, 17, 255);
+}
+.dropmenu-wrap {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-clip: content-box;
+  visibility: hidden;
+  padding-top: 20px;
+  white-space: nowrap;
+}
+.dropmenu {
+  padding: 15px;
+  background: #212529;
+}
+.dropmenu-property {
+  position: absolute;
+  padding: 15px;
+  left: 115px;
+  top: -15px;
+  visibility: hidden;
+  background: #212529;
+}
+.nav-list li:hover > .dropmenu-property,
+.nav-list li:focus-within > .dropmenu-property {
+  visibility: visible;
+}
+.dropmenu a {
+  width: 100%;
+}
+li.mega-menu-wrap {
+  position: static;
+}
