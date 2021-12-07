@@ -69,21 +69,22 @@ body {
 .dropmenu-wrap {
   position: absolute;
   left: 0;
+  right: 0;
   top: 100%;
   background-clip: content-box;
   visibility: hidden;
-  padding-top: 20px;
+  padding: 0;
   white-space: nowrap;
 }
 .dropmenu {
-  padding: 15px;
+  padding-top: 20px;
   background: #212529;
 }
 .dropmenu-property {
   position: absolute;
-  padding: 15px;
-  left: 115px;
-  top: -15px;
+  padding: 0;
+  left: 140px;
+  top: -1px;
   visibility: hidden;
   background: #212529;
 }
@@ -93,7 +94,11 @@ body {
 }
 .dropmenu a {
   width: 100%;
+  padding: 15px 20px;
 }
 li.mega-menu-wrap {
   position: static;
+}
+.list-item>a{
+
 }
