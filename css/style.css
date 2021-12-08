@@ -43,7 +43,7 @@ body {
 .navbar,
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .nav-list > li:nth-child(n + 2) {
   margin-left: 20px;
